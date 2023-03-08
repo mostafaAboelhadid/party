@@ -113,4 +113,9 @@ h1 {
     cursor: pointer;
     text-align: center;
     color: #777;
+    transition: all 0.5s;
+}
+.con-social i:hover{
+    background-color: #D62E33;
+    color: #fff;
 }
