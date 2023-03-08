@@ -89,3 +89,26 @@ h1 {
     font-size: 22px;
     display: block;
 }
+
+/* contact */
+
+.tele {
+    font-size: 0.85em;
+}
+.tele p{
+    margin-bottom: 30px;
+}
+.tele i{
+    margin-right: 20px;
+    color: #777;
+}
+.con-social i{
+    margin-right: 10px;
+    border: 1px solid #999;
+    width: 35px;
+    height: 35px;
+    line-height: 37px;
+    cursor: pointer;
+    text-align: center;
+    color: #777;
+}
