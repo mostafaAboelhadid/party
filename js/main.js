@@ -1,3 +1,5 @@
+// navbar
+
 function closeNav() {
     $("#nav-bar").width("0px");
     $(".main").css("margin-left", "0px");
@@ -16,6 +18,8 @@ $('.main span').click( function(){
 
 $('#nav-bar icon').click(closeNav);
 
+// singers
+
 $(document).ready(function (){
     $(".singers article:first").css("display", "block");
     $('.singers h3').click(function (){
@@ -24,3 +28,15 @@ $(document).ready(function (){
         $(".singers article").not($(this).next()).slideUp(500);
     });
 });
+
+// text area
+
+    $("textarea").keydown(function() {
+        const length = $(this).val().length;
+        const character = 100 - length;
+        if (character <= 0) {
+            $("#char").text("your available character finished");
+        } else {
+            $("#char").text(character);
+        }
+    });
