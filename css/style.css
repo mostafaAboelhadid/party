@@ -1,7 +1,7 @@
 #nav-bar {
   background-color: #414658;
   width: 200px;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -29,7 +29,7 @@
   background-image: url(../images/events-heavenly-header.jpg);
   background-size: 100% 100%;
   width: 100%;
-  height: 550px;
+  height: 80vh;
   position: relative;
 }
 .layer {
@@ -43,79 +43,102 @@
 h1 {
   font-size: 50px;
   font-weight: 400;
+  transition: all 0.3s;
 }
-.layer span{
-    font-size:30px;
-    cursor:pointer;
-    transform: translate(0, -100%);
+.layer span {
+  font-size: 30px;
+  cursor: pointer;
+  transform: translate(0, -100%);
+  transition: all 0.3s;
 }
 
 /* duration */
 
-.main{
-    transition: all 0.5s;
-    padding: 16px;
+.main {
+  transition: all 0.5s;
+  padding: 16px;
 }
-.singers h3{
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin: 0;
-    background-color: rgba(214, 46, 51, 0.6);
-    cursor: pointer;
-    font-size: 24px !important;
+.singers {
+  transition: all 0.3s;
 }
-.singers article{
-    padding: 10px;
-    background-color: #ccc;
-    font-size: 11px;
-    margin: 0;
-    text-align: center;
-    display: none;
+.singers h3 {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  background-color: rgba(214, 46, 51, 0.6);
+  cursor: pointer;
+  font-size: 24px !important;
+}
+.singers article {
+  padding: 10px;
+  background-color: #ccc;
+  font-size: 11px;
+  margin: 0;
+  text-align: center;
+  display: none;
 }
 
 /* detailes */
 
-.details-bg{
-    background-image: url(../images/invitation-2508607__340.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: relative;
-    height: 280px;
+.details-bg {
+  background-image: url(../images/invitation-2508607__340.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  height: 280px;
 }
-.countdow div div{
-    padding: 50px;
-    border: 1px solid #FFF;
+.countdow div div {
+  padding: 50px;
+  border: 1px solid #fff;
+  transition: all 0.3s;
 }
-.countdow div div h3{
-    font-size: 22px;
-    display: block;
+.countdow div div h3 {
+  font-size: 22px;
+  display: block;
 }
 
 /* contact */
 
 .tele {
-    font-size: 0.85em;
+  font-size: 0.85em;
 }
-.tele p{
-    margin-bottom: 30px;
+.tele p {
+  margin-bottom: 30px;
 }
-.tele i{
-    margin-right: 20px;
-    color: #777;
+.tele i {
+  margin-right: 20px;
+  color: #777;
 }
-.con-social i{
-    margin-right: 10px;
-    border: 1px solid #999;
-    width: 35px;
-    height: 35px;
-    line-height: 37px;
-    cursor: pointer;
-    text-align: center;
-    color: #777;
-    transition: all 0.5s;
+.con-social i {
+  margin-right: 10px;
+  border: 1px solid #999;
+  width: 35px;
+  height: 35px;
+  line-height: 37px;
+  cursor: pointer;
+  text-align: center;
+  color: #777;
+  transition: all 0.5s;
 }
-.con-social i:hover{
-    background-color: #D62E33;
-    color: #fff;
+.con-social i:hover {
+  background-color: #d62e33;
+  color: #fff;
+}
+
+/* media */
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .main span {
+    font-size: 1rem;
+  }
+  .singers {
+    width: 80% !important;
+  }
+  .countdow div div {
+    padding: 30px;
+  }
 }
