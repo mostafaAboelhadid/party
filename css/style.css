@@ -8,7 +8,7 @@
   left: 0;
   width: 0px;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: all 0.5s;
 }
 #nav-bar .fa-xmark {
   transition: all 0.3s;
@@ -43,7 +43,6 @@
 h1 {
   font-size: 50px;
   font-weight: 400;
-  transition: all 0.3s;
 }
 .layer span {
   font-size: 30px;
@@ -57,9 +56,6 @@ h1 {
 .main {
   transition: all 0.5s;
   padding: 16px;
-}
-.singers {
-  transition: all 0.3s;
 }
 .singers h3 {
   color: white;
@@ -91,7 +87,6 @@ h1 {
 .countdow div div {
   padding: 50px;
   border: 1px solid #fff;
-  transition: all 0.3s;
 }
 .countdow div div h3 {
   font-size: 22px;
@@ -119,7 +114,6 @@ h1 {
   cursor: pointer;
   text-align: center;
   color: #777;
-  transition: all 0.5s;
 }
 .con-social i:hover {
   background-color: #d62e33;
@@ -129,6 +123,9 @@ h1 {
 /* media */
 
 @media (max-width: 700px) {
+  *{
+    transition: all 0.5s;
+  }
   h1 {
     font-size: 2rem;
   }
@@ -139,6 +136,13 @@ h1 {
     width: 80% !important;
   }
   .countdow div div {
-    padding: 30px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .countdow div div h3 {
+    font-size: 1.25rem;
   }
 }
