@@ -64,12 +64,13 @@ h1 {
     cursor: pointer;
     font-size: 24px !important;
 }
-.singers p{
+.singers article{
     padding: 10px;
     background-color: #ccc;
     font-size: 11px;
     margin: 0;
     text-align: center;
+    display: none;
 }
 
 /* detailes */
