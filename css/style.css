@@ -6,6 +6,7 @@
   z-index: 1;
   top: 0;
   left: 0;
+  width: 0px;
   overflow-x: hidden;
   transition: 0.5s;
 }
