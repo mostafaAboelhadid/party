@@ -48,6 +48,9 @@ h1 {
     cursor:pointer;
     transform: translate(0, -100%);
 }
+
+/* duration */
+
 .main{
     transition: all 0.5s;
     padding: 16px;
@@ -67,4 +70,22 @@ h1 {
     font-size: 11px;
     margin: 0;
     text-align: center;
+}
+
+/* detailes */
+
+.details-bg{
+    background-image: url(../images/invitation-2508607__340.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    height: 280px;
+}
+.countdow div div{
+    padding: 50px;
+    border: 1px solid #FFF;
+}
+.countdow div div h3{
+    font-size: 22px;
+    display: block;
 }
